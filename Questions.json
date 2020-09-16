@@ -1,0 +1,170 @@
+{
+    "status": "true",
+    "message": "Default Preselection Section Fetched Succcessfully",
+    "data": [
+        {
+            "status": "1",
+            "question_no": 1,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:38:25.355Z",
+            "_id": "5f55b941631d2b1f1c4a83c3",
+            "question": "Location",
+            "options": [
+                {
+                    "_id": "5f55b941631d2b1f1c4a83c7",
+                    "option": "Mumbai",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55b941631d2b1f1c4a83c6",
+                    "option": "Delhi",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55b941631d2b1f1c4a83c5",
+                    "option": "kolkata",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55b941631d2b1f1c4a83c4",
+                    "option": "Banglore",
+                    "marks": 1
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        },
+        {
+            "status": "1",
+            "question_no": 2,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:40:06.607Z",
+            "_id": "5f55b9a6631d2b1f1c4a83c8",
+            "question": "Comfort With PartTime Internship",
+            "options": [
+                {
+                    "_id": "5f55b9a6631d2b1f1c4a83ca",
+                    "option": "Yes",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55b9a6631d2b1f1c4a83c9",
+                    "option": "No",
+                    "marks": 0
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        },
+        {
+            "status": "1",
+            "question_no": 3,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:43:37.755Z",
+            "_id": "5f55ba79631d2b1f1c4a83cb",
+            "question": "Comfort With FieldWork",
+            "options": [
+                {
+                    "_id": "5f55ba79631d2b1f1c4a83cd",
+                    "option": "Yes",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55ba79631d2b1f1c4a83cc",
+                    "option": "No",
+                    "marks": 0
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        },
+        {
+            "status": "1",
+            "question_no": 4,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:43:55.396Z",
+            "_id": "5f55ba8b631d2b1f1c4a83ce",
+            "question": "Available for 4 weeks",
+            "options": [
+                {
+                    "_id": "5f55ba8b631d2b1f1c4a83d0",
+                    "option": "Yes",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55ba8b631d2b1f1c4a83cf",
+                    "option": "No",
+                    "marks": 0
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        },
+        {
+            "status": "1",
+            "question_no": 5,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:44:21.316Z",
+            "_id": "5f55baa5631d2b1f1c4a83d1",
+            "question": "Works Hours Confirmed",
+            "options": [
+                {
+                    "_id": "5f55baa5631d2b1f1c4a83d3",
+                    "option": "Yes",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55baa5631d2b1f1c4a83d2",
+                    "option": "No",
+                    "marks": 0
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        },
+        {
+            "status": "1",
+            "question_no": 6,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:44:29.687Z",
+            "_id": "5f55baad631d2b1f1c4a83d4",
+            "question": "Conform with Target Based Rewards",
+            "options": [
+                {
+                    "_id": "5f55baad631d2b1f1c4a83d6",
+                    "option": "Yes",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55baad631d2b1f1c4a83d5",
+                    "option": "No",
+                    "marks": 0
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        },
+        {
+            "status": "1",
+            "question_no": 7,
+            "question_type": "1",
+            "created_on": "2020-09-07T04:44:37.156Z",
+            "_id": "5f55bab5631d2b1f1c4a83d7",
+            "question": "Availability on Android Smartphone",
+            "options": [
+                {
+                    "_id": "5f55bab5631d2b1f1c4a83d9",
+                    "option": "Yes",
+                    "marks": 1
+                },
+                {
+                    "_id": "5f55bab5631d2b1f1c4a83d8",
+                    "option": "No",
+                    "marks": 0
+                }
+            ],
+            "internship_type": "PartTime",
+            "__v": 0
+        }
+    ]
+}
