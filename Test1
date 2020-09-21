@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.testlistview.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="24dp"
+                android:id="@+id/ll_module_count"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/cl_preselection"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                android:layout_below="@+id/ll_module_count">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:src="@drawable/ic_launcher_background"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_questions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/iv_icon"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="16sp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="et molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_below="@+id/tv_questions"
+                    android:textSize="15sp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toTopOf="@id/rv_options"
+                    android:visibility="visible" />
+
+
+                <ListView
+                    android:id="@+id/rv_options"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:choiceMode="singleChoice"
+                    android:divider="@null"
+                    tools:listitem="@layout/response_pojo"
+                    android:layout_below="@+id/tv_message"
+                    app:layout_constraintStart_toStartOf="@id/tv_questions"
+                    app:layout_constraintTop_toBottomOf="@id/tv_message"
+                  />
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Back"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@id/tv_questions"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_options" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Next"
+                android:layout_below="@+id/cl_preselection"
+                android:layout_alignParentRight="true"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_fail_retake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+
+                android:padding="10dp"
+                android:text="Retake Assesment"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="18dp"
+                android:layout_below="@id/tv_next"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cl_preselection"
+                android:layout_marginTop="32dp"
+                android:weightSum="2"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_retake"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Retake"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"/>
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Confirm &amp; Proceed"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:visibility="visible"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
