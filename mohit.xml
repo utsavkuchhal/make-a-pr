@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.oyster.connect.Activity.MyInternshipsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btnApply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include5"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="bottom"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_Inprogress"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/barrier">
+                <TextView
+                    android:id="@+id/tv_Inprogress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:drawableLeft="@drawable/add_more_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="In Progess"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:drawablePadding="10dp"
+                    android:text="Complete all the milestones get certificates and other rewards"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_shortlisted"
+                app:layout_constraintStart_toStartOf="@+id/ll_Inprogress"
+                app:layout_constraintTop_toBottomOf="@+id/cl_InProgress">
+                <TextView
+                    android:id="@+id/tv_shortlisted"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/add_more_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Shortlisted"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:drawablePadding="10dp"
+                    android:text="Complete Pre-Selection Tasks to get selected"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/ll_completed"
+            app:layout_constraintStart_toStartOf="@+id/ll_shortlisted"
+            app:layout_constraintTop_toBottomOf="@+id/cl_shortlisted"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/add_more_icon"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:text="Completed"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:drawablePadding="10dp"
+                android:text="View, Download or Share your Certificates with the world!"
+                android:textSize="15sp"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ll_applied"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/ll_completed"
+                app:layout_constraintTop_toBottomOf="@+id/cl_completed" >
+                <TextView
+                    android:id="@+id/tv_applied"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/add_more_icon"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="Applied"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:drawablePadding="10dp"
+                    android:text="Check to see if you can Re-apply and Get shortlisted this time"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_droppedout"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:drawableLeft="@drawable/add_more_icon"-->
+<!--                android:drawablePadding="10dp"-->
+<!--                android:fontFamily="@font/opensans_semibold"-->
+<!--                android:text="Dropped Out"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="16sp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_applied"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/cl_applied" />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_InProgress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/ll_Inprogress"
+                app:layout_constraintTop_toBottomOf="@+id/ll_Inprogress">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_InProgress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view_detail"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/searchback"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_InProgress" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_shortlisted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ll_shortlisted"
+                app:layout_constraintTop_toBottomOf="@+id/ll_shortlisted">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_shortlisted"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_completed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/ll_completed"
+                app:layout_constraintTop_toBottomOf="@+id/ll_completed">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_completed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_applied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ll_applied">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_applied"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:id="@+id/cl_droppedout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tv_droppedout"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_droppedout">-->
+
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rv_droppedout"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/tv_description" />-->
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
